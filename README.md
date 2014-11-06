@@ -1,7 +1,7 @@
 paweyorks.com
 =============
 
-Comercial Site developed whit Open Source Software.
+Comercial Site developed whit Software Open Source.
 
 Tools
 ----
