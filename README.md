@@ -1,5 +1,4 @@
 paweyorks.com
-=============
 
 Comercial Site developed whit Open Source Software.
 

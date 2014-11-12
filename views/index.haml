@@ -65,7 +65,7 @@
             %p
               Provisioning a successful launch of your application,
               optimizing response time resulting in high performance and efficiency.
-      .ribbon-00.l-box-lrg.pure-g
+      .ribbon-01.l-box-lrg.pure-g
         .l-box-lrg.is-center.pure-u-1.pure-u-md-1-2.pure-u-lg-2-5
           %img.pure-img-responsive{:alt => "File Icons", :src => "img/responsive-web.png", :width => "150px"}
         .pure-u-1.pure-u-md-1-2.pure-u-lg-3-5
@@ -84,16 +84,18 @@
             tablets by a native way, almost without performance loss.
       .ribbon-02.l-box-lrg.pure-g
         .l-box-lrg.is-center.pure-u-1.pure-u-md-1-2.pure-u-lg-2-5
-          %img.pure-img-responsive{:alt => "File Icons", :src => "img/angularjs.png", :width => "150px"}
+          %img.pure-img-responsive{:alt => "File Icons", :src => "img/treehex.png", :width => "200px"}
         .pure-u-1.pure-u-md-1-2.pure-u-lg-3-5
-          %h2.content-head.content-head-ribbon Laboris nisi ut aliquip.
+          %h2.content-head.content-head-ribbon Tools
           %p
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor.
+            Frameworks and tools focused on the agile development, such as:
+            %ul
+              %li Ruby
+              %li AngularJS
+              %li Bootstrap
+              %li etc.
       .content
-        %h2.content-head.is-center Dolore magna aliqua. Uis aute irure.
+        %h2.content-head.is-center Know more about Us.
         .pure-g
           .l-box-lrg.pure-u-1.pure-u-md-2-5
             %form.pure-form.pure-form-stacked
@@ -105,16 +107,29 @@
                   %input#email{:placeholder => "Your Email", :type => "email"}
                     %label{:for => "message"} Your Message
                     %textarea#message{:cols => "50", :placeholder => "Your Message", :rows => "5"}
-                    %button.pure-button{:type => "submit"} Sign Up
+                    %button.pure-button{:type => "submit"}
+                      %i.fa.fa-send
+                      Send Message
           .l-box-lrg.pure-u-1.pure-u-md-3-5
-            %h4 About Us
-            %p
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
+            %h4 We are
+            .l-box-lrg.pure-u-1
+              .hexagon
+                %a{href: 'https://twitter.com/learod87', target: '_blank'}
+                  %span
+                    %i.fa.fa-twitter
+                %a{href: 'https://github.com/learod', target: '_blank'}
+                  %span
+                    %i.fa.fa-github
+                Leandro
+                .face1
+                .face2
+            .l-box-lrg.pure-u-1
+              .css-shapes-preview
             %h4 More Information
             %p
               We are located at Corrientes, ARG.
             #map
+
               <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
               <div style="overflow:hidden;height:200px;width:600px;">
               <div id="gmap_canvas" style="height:200px;width:600px;"></div>
@@ -126,6 +141,7 @@
         View the source of this layout to learn more. Made with love by the YUI Team.
     %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
     :javascript
+      $(".ha-header").attr('style','visibility: hidden;')
       $(window).scroll(function () {
         if ( $(this).scrollTop() > 400 ) {
           $(".ha-header").attr('style','visibility: visible;')
