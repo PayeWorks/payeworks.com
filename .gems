@@ -1,3 +1,4 @@
 cuba -v 3.3.0
 cuba-haml -v 1.0
 shotgun -v 0.9
+mail -v 2.6.3
